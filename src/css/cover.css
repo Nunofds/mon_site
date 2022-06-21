@@ -1,0 +1,160 @@
+/* variables */
+:root {
+    --color-black: #000;
+    --color-gray: #fffefe;
+    --color1: #00000090;
+    --color2: #ddd;
+    --color3: #d5dee3;
+    --color-orange: #ffa500;
+}
+
+/* social and contact */
+div.social-content {
+    background: var(--color-black);
+    position: relative;
+}
+
+div.social-content div.contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+div.social-content div.contact p a,
+div.social-content div.social a {
+    color: var(--color-gray);
+    text-decoration: none;
+}
+div.social-content div.contact p a:hover {
+    color: var(--color-orange);
+}
+
+div.social-content div.contact p {
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 15px;
+    font-size: 14px;
+    border-left: 2px solid var(--color-orange);
+}
+
+div.social-content div.social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+div.social-content div.social a {
+    padding: 5px;
+}
+div.social-content div.social a i {
+    transition: all ease-in-out 0.3s;
+}
+div.social-content div.social a i:hover {
+    transform: scale(1.5);
+}
+
+/*  */
+#header {
+    background: url("../img/couverture_19920x1280.jpg") no-repeat center/cover;
+    z-index: 999;
+    /* height: 600px; */
+    height: 800px;
+}
+
+#header nav {
+    position: relative;
+    background: var(--color1);
+    z-index: 999;
+}
+#header nav .navbarnav {
+    text-align: center;
+}
+#header nav .navbarnav li {
+    display: inline-block;
+}
+#header nav .navbarnav li a {
+    color: #fff;
+    padding: 0 1em;
+    text-decoration: none;
+}
+#header nav .navbarnav li a:hover {
+    color: var(--color-orange);
+}
+
+/* presentation */
+#header div.presentation {
+    text-align: center;
+    color: var(--color2);
+    margin-top: 120px;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.4);
+}
+#header div.presentation p.btn-contacter {
+    margin-top: 45px;
+}
+#header div.presentation p.btn-contacter a {
+    border: 1px solid var(--color-orange);
+    padding: 8px 18px;
+    background: rgba(101, 101, 101, 0.2);
+    color: var(--color-gray);
+    text-decoration: none;
+}
+#header div.presentation p.btn-contacter a:hover {
+    border: 1px solid var(--color-gray);
+    background: rgba(255, 166, 0, 0.1);
+}
+
+/* arrow */
+div.arrow a {
+    color: var(--color-orange);
+}
+
+/* BTN toogler */
+#menuBar i {
+    margin: 0.5em;
+    color: var(--color2);
+    font-size: 30px;
+}
+
+#nav {
+    position: absolute;
+    height: 0;
+    width: auto;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menuOpen {
+    height: 150px !important;
+}
+
+/* ------------- MEDIA QUERIES -------------- */
+
+@media screen and (max-width: 768px) {
+    #header nav div.logo a img {
+        margin-top: 90px;
+    }
+    div.social-content div.social {
+        margin: 0;
+    }
+    div.social-content div.social a {
+        display: block;
+        font-size: 20px;
+        padding: 0;
+    }
+    .menuOpen {
+        height: 220px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #header nav .navbarnav li {
+        display: block;
+        padding: 0.5em 0;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .menuOpen {
+        height: 310px !important;
+    }
+}

@@ -1,0 +1,40 @@
+/* variables */
+:root {
+    --color-black: #000;
+    --color-gray: #fffefe;
+    --color1: #00000090;
+    --color2: #ddd;
+    --color3: #d5dee3;
+    --color-orange: #ffa500;
+}
+
+/*  */
+footer {
+    background: rgba(23, 50, 53, 0.1);
+}
+
+footer div p {
+    padding: 10px 0;
+    margin: 0;
+}
+footer div ul li {
+    list-style-type: none;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* chevron up (go to header) */
+.button-up i {
+    color: rgba(13, 110, 253, 0.5);
+    font-size: 40px;
+    border-radius: 25px;
+}
+.button-up i:hover {
+    background: rgb(138, 138, 138);
+}
+
+.button-up {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+}
