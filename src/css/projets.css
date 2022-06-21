@@ -19,6 +19,9 @@ section.projets-section div.projets div:nth-child(1) {
 section.projets-section div.projets a img:hover {
     transform: scale(1.5);
 }
+section.projets-section div.projets ul li {
+    list-style: none;
+}
 
 /* ----- MEDIA QUERIES ----- */
 
