@@ -6,13 +6,20 @@
     --color1: #00000090;
     --color2: #ddd;
     --color3: #d5dee3;
+    --color4: #5f5d5d;
     --color-orange: #ffa500;
     --color-links-footer: #b9eeed;
+    --fontSize-copyright: small;
 }
 
 /*  */
 footer {
     background: var(--color-bg-footer);
+}
+
+footer .copyrigth span i {
+    font-size: var(--fontSize-copyright);
+    color: var(--color-gray);
 }
 
 footer div p {
@@ -27,10 +34,10 @@ footer div ul li {
 }
 footer div ul li a {
     color: var(--color-gray);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 footer div ul li a:hover {
-    color: var(--color-links-footer);
+    color: var(--color4);
 }
 
 /* chevron up (go to header) */
@@ -40,11 +47,23 @@ footer div ul li a:hover {
     border-radius: 25px;
 }
 .button-up i:hover {
-    background: rgb(138, 138, 138);
+    background: var(--color4);
 }
-
 .button-up {
     position: fixed;
     bottom: 20px;
     right: 15px;
+}
+
+/* social media footer icons */
+
+.social-media-footer a {
+    color: var(--color-gray);
+    font-size: x-large;
+    padding: 1em;
+    transition: 0.1s;
+}
+.social-media-footer a:hover {
+    color: var(--color4);
+    transition: 0.1s;
 }
