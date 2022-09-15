@@ -1,4 +1,4 @@
-document.getElementById("menuBar").addEventListener("click", (e) => {
-    document.querySelector("#nav").classList.toggle("menuOpen");
-    console.log(e);
+document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".sidenav");
+    var instances = M.Sidenav.init(elems);
 });

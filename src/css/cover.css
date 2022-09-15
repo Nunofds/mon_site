@@ -8,99 +8,65 @@
     --color-orange: #ffa500;
 }
 
-/* social and contact */
-div.social-content {
-    background: var(--color-black);
-    position: relative;
-}
-
-div.social-content div.contact {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px;
-}
-
-div.social-content div.contact p a,
-div.social-content div.social a {
-    color: var(--color-gray);
-    text-decoration: none;
-}
-div.social-content div.contact p a:hover {
-    color: var(--color-orange);
-}
-
-div.social-content div.contact p {
-    margin: 0 0 0 10px;
-    padding: 5px 0 5px 15px;
-    font-size: 14px;
-    border-left: 2px solid var(--color-orange);
-}
-
-div.social-content div.social {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-div.social-content div.social a {
-    padding: 5px;
-}
-div.social-content div.social a i {
-    transition: all ease-in-out 0.3s;
-}
-div.social-content div.social a i:hover {
-    transform: scale(1.5);
-}
-
 /*  */
 #header {
-    background: url("../img/couverture_19920x1280.jpg") no-repeat center/cover;
+    /* background: url("../img/couverture_19920x1280.jpg") no-repeat center/cover; */
     z-index: 999;
     /* height: 600px; */
     height: 800px;
 }
 
 #header nav {
-    position: relative;
-    background: var(--color1);
-    z-index: 999;
+    background: var(--color-gray);
+    position: fixed;
 }
-#header nav .navbarnav {
-    text-align: center;
+#header nav .nav-wrapper a {
+    padding-left: 30px;
 }
-#header nav .navbarnav li {
-    display: inline-block;
+#header nav .nav-wrapper a img {
+    width: 64px;
 }
-#header nav .navbarnav li a {
-    color: #fff;
-    padding: 0 1em;
-    text-decoration: none;
+#header nav .nav-wrapper ul li a {
+    color: var(--color-black);
 }
-#header nav .navbarnav li a:hover {
-    color: var(--color-orange);
+
+#header nav .nav-wrapper .hide-on-med-and-down {
+    padding-right: 60px;
 }
 
 /* presentation */
 #header div.presentation {
-    text-align: center;
-    color: var(--color2);
-    margin-top: 120px;
-    padding: 60px;
-    background: rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding: 200px 0 0 160px;
 }
+#header div.presentation h1,
+h4 {
+    font-weight: bold;
+}
+#header div.presentation h1 {
+    font-size: 40px;
+}
+#header div.presentation h4 {
+    font-size: 26px;
+    padding-bottom: 60px;
+}
+#header div.presentation p {
+    font-size: 1.2em;
+}
+
 #header div.presentation p.btn-contacter {
-    margin-top: 45px;
+    text-align: center;
+    margin-top: 5em;
 }
 #header div.presentation p.btn-contacter a {
     border: 1px solid var(--color-orange);
     padding: 8px 18px;
     background: rgba(101, 101, 101, 0.2);
-    color: var(--color-gray);
     text-decoration: none;
 }
 #header div.presentation p.btn-contacter a:hover {
-    border: 1px solid var(--color-gray);
-    background: rgba(255, 166, 0, 0.1);
+    border: 1px solid var(--color-black);
+    background: rgba(111, 111, 111, 0.5);
 }
 
 /* arrow */
@@ -150,6 +116,10 @@ div.arrow a {
     #header nav .navbarnav li {
         display: block;
         padding: 0.5em 0;
+    }
+
+    #header .before-navbar .contact p {
+        display: block;
     }
 }
 

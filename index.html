@@ -8,7 +8,7 @@
             name="description"
             content="Bonjour, je suis Nuno Fernades, Développeur web et mobile. Je développe votre projet WEB ou vos Applications web de A à Z."
         />
-        <link rel="icon" href="./src/img/logos.png" />
+        <link rel="icon" href="./src/img/logo/logos_black.png" />
 
         <title>NunoFernandes-Dev</title>
 
@@ -32,10 +32,16 @@
 
         <!-- ***** Bootstrap5 css cdn ***** -->
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
+        />
+
+        <!-- ***** materialize css cdn ***** -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         />
 
         <!-- ***** my css link ***** -->
@@ -48,82 +54,48 @@
     <body>
         <!-- HEADER -->
         <header id="header">
-            <button
-                id="menuBar"
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="nav">
-                <div class="social-content">
-                    <div class="contact">
-                        <p>
-                            <a href="mailto:fernandes.n.sa@outlook.fr"
-                                ><i class="fa-solid fa-at"></i>
-                                fernandes.n.sa@outlook.fr</a
-                            >
-                        </p>
-                        <p>
-                            <a href="tel:+33771802921"
-                                ><i class="fa-solid fa-phone"></i> +33 7 71 80
-                                29 21</a
-                            >
-                        </p>
-                    </div>
-                    <div class="social">
-                        <a
-                            href="https://www.facebook.com/profile.php?id=100081379027099"
-                            target="_blank"
-                            class="mx-1"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
-                        <a
-                            href="https://www.instagram.com/nunofernandes_dev/"
-                            target="_blank"
-                            class="mx-1"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                        <a
-                            href="https://www.linkedin.com/in/nuno-fernandes-69a6a4133?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BC3hyZ31bTzOngvoj6LUkFQ%3D%3D"
-                            target="_blank"
-                            class="mx-1"
-                            ><i class="fa-brands fa-linkedin-in"></i
-                        ></a>
-                        <a
-                            href="https://github.com/Nunofds"
-                            target="_blank"
-                            class="mx-1"
-                            ><i class="fa-brands fa-github"></i
-                        ></a>
-                    </div>
-                </div>
-                <!-- logo -->
-                <div class="logo text-center">
-                    <a class="nav-link" href="#header"
+            <!-- navbar -->
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#header" class="brand-logo"
                         ><img
-                            src="./src/img/logos.png"
-                            alt="logotype"
-                            width="80px"
+                            src="./src/img/logo/logos_black.png"
+                            alt="logotype entreprise"
                     /></a>
+                    <a
+                        href="#"
+                        data-target="mobile-demo"
+                        class="sidenav-trigger"
+                        ><i class="material-icons">menu</i></a
+                    >
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#header">Accueil</a></li>
+                        <li><a href="#main">Mes services</a></li>
+                        <li><a href="#projects">Mes projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <ul class="navbarnav">
-                    <li><a href="#main">Mes services</a></li>
-                    <li><a href="#projects">Projets réalisés</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
             </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#header">Accueil</a></li>
+                <li><a href="#main">Mes services</a></li>
+                <li><a href="#projects">Mes projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- presentation -->
             <div class="presentation">
                 <h1>Nuno Fernandes</h1>
-                <p>Développeur web et mobile</p>
+                <h4>Développeur web et mobile</h4>
                 <p>
                     Je développe <b>votre projet WEB</b> ou
                     <b>vos Applications web</b> de A à Z
+                </p>
+                <p>
+                    <b
+                        >DES SITES INTERNET DE QUALITÉ, SUR-MESURE ET SELON VOS
+                        OBJECTIFS</b
+                    >
                 </p>
                 <p class="btn-contacter">
                     <a
@@ -210,6 +182,27 @@
                             src="./src/img/seo.jpg"
                             alt="image ilustration référencement naturel de site web (SEO)"
                         />
+                    </div>
+                </div>
+            </section>
+
+            <section class="first-contact-section">
+                <div id="contact" class="ask-devis my-5">
+                    <div>
+                        <h3>
+                            Vous avez un projet pour vous ou votre entreprise ?
+                        </h3>
+                        <p>
+                            N'hésitez pas a me contacter pour obtenir un devis ?
+                        </p>
+                        <p>
+                            <a
+                                href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
+                                >Contactez moi par email <i>(click ici)</i>
+                            </a>
+                            ou directement par téléphone au
+                            <a href="tel:+33771802921">+33 7 71 80 29 21</a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -325,28 +318,13 @@
             </section>
         </main>
 
-        <div id="contact" class="ask-devis my-5">
-            <div>
-                <h3>Parlons de votre projet</h3>
-                <p>Besoin de discuter de votre projet et obtenir un devis ?</p>
-                <p>
-                    <a
-                        href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
-                        >Contactez moi par email</a
-                    >
-                    ou directement par téléphone au
-                    <a href="tel:+33771802921">+33 7 71 80 29 21</a>
-                </p>
-            </div>
-        </div>
-
         <!-- upper button -->
         <a href="#header" class="button-up"
             ><i class="fa-solid fa-circle-chevron-up"></i
         ></a>
 
         <!-- FOOTER -->
-        <footer class="text-center py-5">
+        <footer id="footer" class="text-center py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 py-5 pt-3">
@@ -434,10 +412,12 @@
 
         <!-- ***** Bootstrap5 js cdn ***** -->
         <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"
         ></script>
+        <!-- materialize js cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
         <!-- ***** my script js ***** -->
         <script src="./src/js/script.js"></script>
