@@ -31,6 +31,10 @@
     color: var(--color-black);
 }
 
+#header nav .nav-wrapper .sidenav-trigger i {
+    color: var(--color-black);
+}
+
 #header nav .nav-wrapper .hide-on-med-and-down {
     padding-right: 60px;
 }
@@ -43,6 +47,7 @@
 #header div.presentation h1,
 h4 {
     font-weight: bold;
+    text-shadow: 1px 1px 1px var(--color-arrow-up);
 }
 #header div.presentation h1 {
     font-size: 40px;
@@ -82,16 +87,21 @@ div.arrow a {
     #header nav div.logo a img {
         margin-top: 90px;
     }
-    div.social-content div.social {
-        margin: 0;
+}
+
+@media screen and (max-width: 635px) {
+    #header div.presentation {
+        padding: 150px 10px 0 10px;
+        text-align: center;
     }
-    div.social-content div.social a {
-        display: block;
-        font-size: 20px;
-        padding: 0;
+    #header div.presentation h1 {
+        font-size: 26px;
     }
-    .menuOpen {
-        height: 220px !important;
+    #header div.presentation h4 {
+        font-size: 18px;
+    }
+    #header div.presentation p {
+        font-size: 11px;
     }
 }
 
@@ -103,6 +113,10 @@ div.arrow a {
 
     #header .before-navbar .contact p {
         display: block;
+    }
+
+    #header .btn-contacter a {
+        font-size: 12px;
     }
 }
 

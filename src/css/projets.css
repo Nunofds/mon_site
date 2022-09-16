@@ -8,10 +8,14 @@
     --color-orange: #ffa500;
 }
 
-/*  */
+/* projects section */
 section.projets-section {
     overflow: hidden;
     background: #f1f1f1;
+}
+section.projets-section h2 {
+    font-size: 2em;
+    font-weight: bolder;
 }
 section.projets-section div.projets div:nth-child(1) {
     overflow: hidden;

@@ -56,7 +56,6 @@ footer div ul li a:hover {
 }
 
 /* social media footer icons */
-
 .social-media-footer a {
     color: var(--color-gray);
     font-size: x-large;
@@ -66,4 +65,11 @@ footer div ul li a:hover {
 .social-media-footer a:hover {
     color: var(--color4);
     transition: 0.1s;
+}
+
+/* ----- MEDIA QUERY ----- */
+@media screen and (max-width: 425px) {
+    .social-media-footer a {
+        padding: 0.5em;
+    }
 }
