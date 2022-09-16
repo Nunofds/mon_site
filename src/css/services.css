@@ -24,6 +24,7 @@ section.services-section div.services-img {
 section.services-section div.services-presentation {
     width: 50%;
     padding: 60px;
+    text-align: start;
 }
 section.services-section div.services img {
     min-height: 150px;
@@ -32,16 +33,19 @@ section.services-section div.services img {
 }
 
 /* section Parlons de votre projet */
+.first-contact-section {
+    margin: 80px 0;
+}
 div.ask-devis {
     width: 50%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 60px 30px 60px 30px;
     /* background: #000; */
     box-shadow: 0px 5px 20px 0px #000000;
     border-radius: 10px;
     text-align: start;
     font-size: 16px;
-    background: #f1f1f1;
+    background: rgb(237, 237, 238);
 }
 
 div.ask-devis div:first-child {

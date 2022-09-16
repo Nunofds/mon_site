@@ -6,14 +6,15 @@
     --color2: #ddd;
     --color3: #d5dee3;
     --color-orange: #ffa500;
+    --color-arrow-up: #89d7d5;
 }
 
 /*  */
 #header {
-    /* background: url("../img/couverture_19920x1280.jpg") no-repeat center/cover; */
+    background: url("../img/baniere/pexels-jéshoots-238118.jpg") no-repeat
+        center/cover;
     z-index: 999;
-    /* height: 600px; */
-    height: 800px;
+    height: 650px;
 }
 
 #header nav {
@@ -37,7 +38,7 @@
 /* presentation */
 #header div.presentation {
     text-align: left;
-    padding: 200px 0 0 160px;
+    padding: 150px 0 0 80px;
 }
 #header div.presentation h1,
 h4 {
@@ -55,14 +56,15 @@ h4 {
 }
 
 #header div.presentation p.btn-contacter {
-    text-align: center;
+    font-size: 14px;
     margin-top: 5em;
 }
 #header div.presentation p.btn-contacter a {
-    border: 1px solid var(--color-orange);
+    border: 1px solid var(--color-arrow-up);
     padding: 8px 18px;
     background: rgba(101, 101, 101, 0.2);
     text-decoration: none;
+    color: var(--color-black);
 }
 #header div.presentation p.btn-contacter a:hover {
     border: 1px solid var(--color-black);
@@ -71,26 +73,7 @@ h4 {
 
 /* arrow */
 div.arrow a {
-    color: var(--color-orange);
-}
-
-/* BTN toogler */
-#menuBar i {
-    margin: 0.5em;
-    color: var(--color2);
-    font-size: 30px;
-}
-
-#nav {
-    position: absolute;
-    height: 0;
-    width: auto;
-    left: 0;
-    overflow: hidden;
-    transition: 0.5s;
-}
-.menuOpen {
-    height: 150px !important;
+    color: var(--color-arrow-up);
 }
 
 /* ------------- MEDIA QUERIES -------------- */
