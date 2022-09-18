@@ -7,62 +7,65 @@
     --color3: #d5dee3;
     --color-orange: #ffa500;
     --color-arrow-up: #89d7d5;
+    --color-bg-navlinks: rgba(137, 215, 213, 0.2);
 }
 
 /*  */
 #header {
     background: url("../img/baniere/pexels-jéshoots-238118.jpg") no-repeat
         center/cover;
-    z-index: 999;
-    height: 650px;
 }
 
 #header nav {
     background: var(--color-gray);
     position: fixed;
+    z-index: 1000;
 }
-#header nav .nav-wrapper a {
-    padding-left: 30px;
-}
-#header nav .nav-wrapper a img {
+#header nav .navbar-brand img {
     width: 64px;
 }
-#header nav .nav-wrapper ul li a {
-    color: var(--color-black);
+
+#header nav div.navbar-collapse ul {
+    height: inherit;
+    line-height: 60px;
+}
+#header nav div.navbar-collapse ul li:hover {
+    background: var(--color-bg-navlinks);
 }
 
-#header nav .nav-wrapper .sidenav-trigger i {
-    color: var(--color-black);
+#header div.social-media {
+    padding-top: 94px;
 }
-
-#header nav .nav-wrapper .hide-on-med-and-down {
-    padding-right: 60px;
+#header div.social-media a {
+    padding: 0.5em;
+}
+#header div.social-media a:hover {
+    background: var(--color-bg-navlinks);
 }
 
 /* presentation */
 #header div.presentation {
     text-align: left;
-    padding: 150px 0 0 80px;
-}
-#header div.presentation h1,
-h4 {
-    font-weight: bold;
-    text-shadow: 1px 1px 1px var(--color-arrow-up);
+    padding: 80px 0 0 80px;
+    height: 700px;
 }
 #header div.presentation h1 {
-    font-size: 40px;
-}
-#header div.presentation h4 {
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px var(--color-arrow-up);
     font-size: 26px;
-    padding-bottom: 60px;
+    padding: 60px;
+    color: rgb(93, 127, 144);
+    text-shadow: 5px 2px 2px rgb(255, 255, 255);
 }
+
 #header div.presentation p {
     font-size: 1.2em;
+    color: rgb(77, 109, 124);
 }
 
 #header div.presentation p.btn-contacter {
     font-size: 14px;
-    margin-top: 5em;
+    padding-top: 5em;
 }
 #header div.presentation p.btn-contacter a {
     border: 1px solid var(--color-arrow-up);
@@ -105,10 +108,29 @@ div.arrow a {
     }
 }
 
+@media screen and (max-width: 540px) {
+    #header div.presentation {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .menuOpen {
+        height: 310px !important;
+    }
+}
+
 @media screen and (max-width: 425px) {
     #header nav .navbarnav li {
         display: block;
         padding: 0.5em 0;
+    }
+
+    #header div.presentation h1 {
+        font-size: 20px;
+    }
+    #header div.presentation p {
+        padding: 0 10px;
     }
 
     #header .before-navbar .contact p {
@@ -117,11 +139,5 @@ div.arrow a {
 
     #header .btn-contacter a {
         font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 435px) {
-    .menuOpen {
-        height: 310px !important;
     }
 }
