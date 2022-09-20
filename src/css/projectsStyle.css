@@ -5,6 +5,7 @@
     --bg-card: #17141d;
     --color1: #2e3033;
     --color2: rgb(0, 154, 217);
+    --color-title-h2: rgb(77, 109, 124);
 }
 
 #projects h2 {
@@ -12,6 +13,7 @@
     font-size: 2em;
     font-weight: bolder;
     text-align: center;
+    color: var(--color-title-h2);
 }
 
 .projects-container {

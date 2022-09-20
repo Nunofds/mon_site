@@ -11,6 +11,7 @@ section.services-section {
 section.services-section h2 {
     font-size: 2em;
     font-weight: bolder;
+    color: rgb(77, 109, 124);
 }
 
 section.services-section div.services {
@@ -90,6 +91,9 @@ div.ask-devis div:first-child {
     section.services-section div.services-presentation h3 {
         text-align: center;
         margin-top: 0;
+    }
+    section.services-section div.services-presentation p {
+        text-align: center;
     }
     section.services-section div.services img {
         width: 300px;
