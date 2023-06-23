@@ -1,97 +1,98 @@
 /* animations */
 .grid {
-    display: flex;
-    justify-content: start;
-    text-align: center;
-    font-weight: bolder;
-    z-index: inherit;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  font-weight: bolder;
+  z-index: inherit;
 }
 
 .letter-anim,
 .letter-anim span {
-    display: inline-block;
+  display: inline-block;
 }
 .grid span {
-    cursor: pointer;
-    position: relative;
-    font-size: 5em;
-    perspective: 550px;
+  cursor: pointer;
+  position: relative;
+  font-size: 5em;
+  perspective: 550px;
 }
 .letter-anim span::before,
 .letter-anim span::after {
-    position: absolute;
-    content: attr(data-letter);
-    inset: 0;
-    transform-origin: left;
+  position: absolute;
+  content: attr(data-letter);
+  inset: 0;
+  transform-origin: left;
 }
 .letter-anim span::before {
-    transition: transform 0.4s ease-out;
-    color: rgb(155, 194, 214);
+  transition: transform 0.4s ease-out;
+  color: rgb(155, 194, 214);
 }
 .letter-anim span::after {
-    color: #f1f1f1;
-    transition: transform 0.4s ease-out, color 0.3s ease-out;
-    transform: rotateY(-30deg);
+  color: #f1f1f1;
+  transition: transform 0.4s ease-out, color 0.3s ease-out;
+  transform: rotateY(-30deg);
 }
 .letter-anim:hover span::after {
-    transform: rotateY(-40deg);
+  transform: rotateY(-40deg);
 }
 
 .letter-anim:hover span::before {
-    transform: scaleX(0.85) skewY(20deg);
-    color: rgba(0, 0, 0, 0.1);
+  transform: scaleX(0.85) skewY(20deg);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .letter-anim-presentation div.lastname {
-    display: flex;
-    justify-content: start;
-    padding-left: 100px;
+  display: flex;
+  justify-content: start;
+  padding-left: 100px;
 }
 
 /* colors */
 .letter-anim:nth-child(1):hover span::after {
-    color: red;
+  color: red;
 }
 .letter-anim:nth-child(2):hover span::after {
-    color: #4b88a2;
+  color: #4b88a2;
 }
 .letter-anim:nth-child(3):hover span::after {
-    color: #ef27a6;
+  color: #ef27a6;
 }
 .letter-anim:nth-child(4):hover span::after {
-    color: #e4ff1a;
+  color: #e4ff1a;
 }
 .letter-anim:nth-child(5):hover span::after {
-    color: #42b326;
+  color: #42b326;
 }
 .letter-anim:nth-child(6):hover span::after {
-    color: #5333c6;
+  color: #5333c6;
 }
 .letter-anim:nth-child(7):hover span::after {
-    color: #b44f24;
+  color: #b44f24;
 }
 .letter-anim:nth-child(8):hover span::after {
-    color: #7a24a5;
+  color: #7a24a5;
 }
 .letter-anim:nth-child(9):hover span::after {
-    color: #a6b726;
+  color: #a6b726;
 }
 
 /* media query */
 @media screen and (max-width: 540px) {
-    .grid span {
-        font-size: 4em;
-    }
-    .letter-anim-presentation div.lastname {
-        padding-left: 0;
-    }
-    .grid,
-    .letter-anim-presentation div.lastname {
-        justify-content: center;
-    }
+  .grid span {
+    font-size: 4em;
+  }
+  .letter-anim-presentation div.lastname {
+    padding-left: 0;
+  }
+  .grid,
+  .letter-anim-presentation div.lastname {
+    justify-content: center;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 425px) {
-    .grid span {
-        font-size: 3.8em;
-    }
+  .grid span {
+    font-size: 3.8em;
+  }
 }
