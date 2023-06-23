@@ -1,547 +1,546 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Bonjour, je suis Nuno Fernades, Développeur web et mobile. Je développe votre projet WEB ou vos Applications web de A à Z."
-        />
-        <link rel="icon" href="./src/img/logo/logos_black.png" />
-        <title>NunoFernandes-Dev</title>
-        <!-- ***** Google fonts ***** -->
-        <!-- LATO -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet"
-        />
-        <!-- ***** Fontawesome cdn ***** -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- ***** Bootstrap5 css cdn ***** -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-            crossorigin="anonymous"
-        />
-        <!-- materialize icons cdn -->
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bonjour, je suis Nuno Fernades, Développeur web et mobile. Je développe votre projet WEB ou vos Applications web de A à Z."
+    />
+    <link rel="icon" href="./src/img/logo/logos_black.png" />
+    <title>NunoFernandes-Dev</title>
+    <!-- ***** Google fonts ***** -->
+    <!-- LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***** Fontawesome cdn ***** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ***** Bootstrap5 css cdn ***** -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- materialize icons cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-        <!-- ***** my css link ***** -->
-        <link rel="stylesheet" href="./src/css/general.css" />
-        <link rel="stylesheet" href="./src/css/cover.css" />
-        <link rel="stylesheet" href="./src/css/services.css" />
-        <link rel="stylesheet" href="./src/css/footer.css" />
-        <link rel="stylesheet" href="./src/css/projectsStyle.css" />
-        <link rel="stylesheet" href="./src/css/headerAnimStyle.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header id="header">
-            <div id="accueil">
-                <!-- navbar -->
-                <nav class="container-fluid navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#accueil"
-                            ><img
-                                src="./src/img/logo/logos_black.png"
-                                alt="logotype entreprise"
-                        /></a>
-                        <button
-                            id="btnToogler"
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link"
-                                        aria-current="page"
-                                        href="#accueil"
-                                        >Accueil</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#services"
-                                        >Mes services</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#projects"
-                                        >Mes projets</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact"
-                                        >Contact</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
-                <!-- social media -->
-                <div class="social-media container-fluid bg-light">
-                    <div class="d-flex justify-content-end">
-                        <a
-                            class="nav-link mx-1"
-                            href="https://www.facebook.com/profile.php?id=100081379027099"
-                            target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
-                        <a
-                            class="nav-link mx-1"
-                            href="https://www.instagram.com/nunofernandes_dev/"
-                            target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
-                        <a
-                            class="nav-link mx-1"
-                            href="https://www.linkedin.com/in/nuno-fernandes-69a6a4133"
-                            target="_blank"
-                        >
-                            <i class="fa-brands fa-linkedin-in"></i
-                        ></a>
-                        <a
-                            class="nav-link mx-1"
-                            href="https://github.com/Nunofds"
-                            target="_blank"
-                            ><i class="fa-brands fa-github"></i
-                        ></a>
-                    </div>
-                </div>
+    <!-- ***** my css link ***** -->
+    <link rel="stylesheet" href="./src/css/general.css" />
+    <link rel="stylesheet" href="./src/css/cover.css" />
+    <link rel="stylesheet" href="./src/css/services.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="./src/css/projectsStyle.css" />
+    <link rel="stylesheet" href="./src/css/headerAnimStyle.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div id="accueil">
+        <!-- navbar -->
+        <nav class="container-fluid navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#accueil"
+              ><img
+                src="./src/img/logo/logos_black.png"
+                alt="logotype entreprise"
+            /></a>
+            <button
+              id="btnToogler"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#accueil"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Ce que je fais</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Quelques projets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Me contacter</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
 
-            <!-- presentation -->
-            <div class="presentation">
-                <!-- <h1>Nuno Fernandes</h1> -->
-                <div class="letter-anim-presentation">
-                    <div class="grid">
-                        <div class="letter-anim">
-                            <span data-letter="N">N</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="u">u</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="N">N</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="o">o</span>
-                        </div>
-                    </div>
-                    <div class="lastname grid">
-                        <div class="letter-anim">
-                            <span data-letter="F">F</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="e">e</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="r">r</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="N">N</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="a">a</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="n">n</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="D">D</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="E">E</span>
-                        </div>
-                        <div class="letter-anim">
-                            <span data-letter="s">s</span>
-                        </div>
-                    </div>
-                </div>
-
-                <h1>Développeur web et mobile</h1>
-                <p>
-                    Je développe <b>votre projet WEB</b> ou
-                    <b>vos Applications web</b> de A à Z
-                </p>
-                <p>
-                    <b
-                        >DES SITES INTERNET DE QUALITÉ, SUR-MESURE ET SELON VOS
-                        OBJECTIFS</b
-                    >
-                </p>
-                <p class="btn-contacter">
-                    <a
-                        href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
-                        >ME CONTACTER</a
-                    >
-                </p>
-            </div>
-        </header>
-
-        <div align="center" class="arrow my-5">
-            <a href="#main"
-                ><i class="fa-solid fa-chevron-down" style="font-size: 2em"></i
+        <!-- social media -->
+        <div class="social-media container-fluid bg-light">
+          <div class="d-flex justify-content-end">
+            <a
+              class="nav-link mx-1"
+              href="https://www.linkedin.com/in/nuno-fernandes-69a6a4133"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i
             ></a>
+            <a
+              class="nav-link mx-1"
+              href="https://github.com/Nunofds"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- presentation -->
+      <div class="presentation">
+        <!-- <h1>Nuno Fernandes</h1> -->
+        <div class="letter-anim-presentation">
+          <div class="grid">
+            <div class="letter-anim">
+              <span data-letter="N">N</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="u">u</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="N">N</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="o">o</span>
+            </div>
+          </div>
+          <div class="lastname grid">
+            <div class="letter-anim">
+              <span data-letter="F">F</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="e">e</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="r">r</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="N">N</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="a">a</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="n">n</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="D">D</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="E">E</span>
+            </div>
+            <div class="letter-anim">
+              <span data-letter="s">s</span>
+            </div>
+          </div>
         </div>
 
-        <!-- MAIN -->
-        <main id="main">
-            <!-- Mes services -->
-            <section
-                id="services"
-                class="container services-section py-5 text-center"
+        <h1>Développeur Full Stack</h1>
+        <p><span>en recherche d&apos;une alternance</span></p>
+
+        <p>
+          <b
+            >Je développe Sites Web, Interfaces Utilisateurs & Applications de A
+            à Z</b
+          >
+        </p>
+        <p class="btn-contacter">
+          <a
+            href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
+            target="_blank"
+            >Me contacter</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1LVTTJf3P8kx2CSk5zrCVNYAgsqBO0WuW/view?pli=1"
+            target="_blank"
+            >Télécharger CV</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <div align="center" class="arrow my-5">
+      <a href="#main"
+        ><i class="fa-solid fa-chevron-down" style="font-size: 2em"></i
+      ></a>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- ABOUT -->
+      <section class="container">
+        <h2 class="pb-3 mb-3">Qui suis-je ?</h2>
+        <p>
+          Je suis Nuno, développeur web passionné, spécialisé dans la création
+          de sites web et d'applications pour les entreprises et les
+          particuliers.
+          <br />
+          <br />
+          Je suis passionné par la création de sites web et d'applications qui
+          sont à la fois esthétiques et fonctionnels, tout en répondant aux
+          besoins spécifiques des clients. Je suis également un fervent partisan
+          de l'innovation et de l'expérimentation, toujours à la recherche de
+          nouvelles technologies et de nouvelles méthodes pour améliorer mes
+          compétences.
+          <br />
+          <br />
+          Je suis actuellement admis en Bachelor Développeur d'Applications
+          (Bac+3) et je recherche activement une entreprise pour mon alternance
+          pendant les 12-24 prochains mois.
+          <br />
+          <br />
+          Si vous cherchez un développeur web passionné pour votre prochain
+          projet, ou un alternant, n'hésitez pas à me contacter.
+        </p>
+      </section>
+      <!-- END ABOUT -->
+
+      <!-- Mes services -->
+      <section
+        id="services"
+        class="container services-section py-5 text-center"
+      >
+        <h2 class="pt-5">Ce que je fais ?</h2>
+        <!-- CREATION SITE WEB -->
+        <div class="services my-5">
+          <div class="services-img">
+            <img
+              src="./src/img/creation.jpg"
+              alt="image ilustration création site web"
+            />
+          </div>
+          <div class="services-presentation">
+            <h3>Création de sites internet</h3>
+            <p>
+              En suivant le cahier des charges, je réalise pour vous des sites
+              Internet responsives qui vous ressemblent et qui vous mettent en
+              avant auprès des internautes pour leur donner des informations
+              utiles, des fonctionnalités pratiques, avec un design ergonomique
+              et pensé pour la lecture sur écran.
+            </p>
+          </div>
+        </div>
+        <!-- REFONTE SITE WEB -->
+        <div class="services my-5">
+          <div class="services-presentation">
+            <h3>Refonte de site internet</h3>
+            <p>
+              Je vous accompagne pour votre migration ou refonte de votre site
+              internet. Je vous garantit une meilleure ergonomie et une
+              expérience utilisateur optimal.
+            </p>
+          </div>
+          <div class="services-img">
+            <img
+              src="./src/img/refonte.jpg"
+              alt="image ilustration refonte site web"
+            />
+          </div>
+        </div>
+        <!-- MAINTENANCE SITE WEB -->
+        <div class="services my-5">
+          <div class="services-img">
+            <img
+              src="./src/img/maintenance.jpg"
+              alt="image ilustration maintenance de site web"
+            />
+          </div>
+          <div class="services-presentation">
+            <h3>Maintenance de site web</h3>
+            <p>
+              Je m'occuperais des performances, des corrections des failles de
+              sécurité et de la maintenance de votre site internet.
+            </p>
+          </div>
+        </div>
+        <!-- REFERENCEMENT NATUREL -->
+        <div class="services my-5">
+          <div class="services-presentation">
+            <h3>Référencement naturel (SEO)</h3>
+            <p>
+              Positionnez votre site de manière durable dans les premiers
+              résultats naturels des moteurs de recherche.
+            </p>
+          </div>
+          <div class="services-img">
+            <img
+              src="./src/img/seo.jpg"
+              alt="image ilustration référencement naturel de site web (SEO)"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="first-contact-section">
+        <div id="" class="ask-devis my-5">
+          <div>
+            <h5>Vous avez un projet pour vous ou votre entreprise ?</h5>
+            <h5>Vous cherchez un alternant ?</h5>
+            <p>N'hésitez pas a me contacter pour obtenir un devis.</p>
+            <a
+              href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
+              target="_blank"
+              >Me contacter</a
             >
-                <h2 class="pt-5">Mes services</h2>
-                <!-- CREATION SITE WEB -->
-                <div class="services my-5">
-                    <div class="services-img">
-                        <img
-                            src="./src/img/creation.jpg"
-                            alt="image ilustration création site web"
-                        />
-                    </div>
-                    <div class="services-presentation">
-                        <h3>Création de sites internet</h3>
-                        <p>
-                            En suivant le cahier des charges, je réalise pour
-                            vous des sites Internet responsives qui vous
-                            ressemblent et qui vous mettent en avant auprès des
-                            internautes pour leur donner des informations
-                            utiles, des fonctionnalités pratiques, avec un
-                            design ergonomique et pensé pour la lecture sur
-                            écran.
-                        </p>
-                    </div>
-                </div>
-                <!-- REFONTE SITE WEB -->
-                <div class="services my-5">
-                    <div class="services-presentation">
-                        <h3>Refonte de site internet</h3>
-                        <p>
-                            Je vous accompagne pour votre migration ou refonte
-                            de votre site internet. Je vous garantit une
-                            meilleure ergonomie et une expérience utilisateur
-                            optimal.
-                        </p>
-                    </div>
-                    <div class="services-img">
-                        <img
-                            src="./src/img/refonte.jpg"
-                            alt="image ilustration refonte site web"
-                        />
-                    </div>
-                </div>
-                <!-- MAINTENANCE SITE WEB -->
-                <div class="services my-5">
-                    <div class="services-img">
-                        <img
-                            src="./src/img/maintenance.jpg"
-                            alt="image ilustration maintenance de site web"
-                        />
-                    </div>
-                    <div class="services-presentation">
-                        <h3>Maintenance de site web</h3>
-                        <p>
-                            Je m'occuperais des performances, des corrections
-                            des failles de sécurité et de la maintenance de
-                            votre site internet.
-                        </p>
-                    </div>
-                </div>
-                <!-- REFERENCEMENT NATUREL -->
-                <div class="services my-5">
-                    <div class="services-presentation">
-                        <h3>Référencement naturel (SEO)</h3>
-                        <p>
-                            Positionnez votre site de manière durable dans les
-                            premiers résultats naturels des moteurs de
-                            recherche.
-                        </p>
-                    </div>
-                    <div class="services-img">
-                        <img
-                            src="./src/img/seo.jpg"
-                            alt="image ilustration référencement naturel de site web (SEO)"
-                        />
-                    </div>
-                </div>
-            </section>
+          </div>
+        </div>
+      </section>
 
-            <section class="first-contact-section">
-                <div id="" class="ask-devis my-5">
-                    <div>
-                        <h5>
-                            Vous avez un projet pour vous ou votre entreprise ?
-                        </h5>
-                        <p>
-                            N'hésitez pas a me contacter pour obtenir un devis.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mes projets -->
-            <section id="projects">
-                <h2>Mes projets</h2>
-                <div class="container projects-container my-5">
-                    <!-- BurgerCode -->
-                    <div class="card">
-                        <h3 class="title">BurgerCode</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <div class="circle">
-                            <img
-                                src="./src/img/burgerCode.png"
-                                alt="image du site web a visiter"
-                                srcset=""
-                            />
-                            <p class="mt-2">
-                                <a
-                                    class="btn btn-primary"
-                                    href="http://neft.byethost13.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >voir le site</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <!-- SnakeGame -->
-                    <div class="card">
-                        <h3 class="title">SnakeGame-v1</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <div class="circle">
-                            <img
-                                src="./src/img/snakegame.PNG"
-                                alt="image du site web a visiter"
-                                srcset=""
-                            />
-                            <p class="mt-2">
-                                <a
-                                    class="btn btn-primary"
-                                    href="https://nunofds.github.io/gamesnake/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >voir le site</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <!-- HotelNetflix -->
-                    <div class="card">
-                        <h3 class="title">HotelNetflix</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <div class="circle">
-                            <img
-                                src="./src/img/hotelNetflix.PNG"
-                                alt="image du site web a visiter"
-                                srcset=""
-                            />
-                            <p class="mt-2">
-                                <a
-                                    class="btn btn-primary"
-                                    href="./src/docs/HotelNetflix.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >voir le site</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <!-- PizzaMama -->
-                    <div class="card">
-                        <h3 class="title">PizzaMama</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <div class="circle">
-                            <img
-                                src="./src/img/pizzaMama.PNG"
-                                alt="image du site web a visiter"
-                                srcset=""
-                            />
-                            <p class="mt-2">
-                                <a
-                                    class="btn btn-primary"
-                                    href="https://nunodev.pythonanywhere.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >voir le site</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                    <!-- NF_CRM -->
-                    <div class="card">
-                        <h3 class="title">CRM</h3>
-                        <div class="bar">
-                            <div class="emptybar"></div>
-                            <div class="filledbar"></div>
-                        </div>
-                        <div class="circle">
-                            <img
-                                src="./src/img/NF_CRM.PNG"
-                                alt="image du site web a visiter"
-                                srcset=""
-                            />
-                            <p class="mt-2">
-                                <a
-                                    class="btn btn-primary"
-                                    href="./src/files/nf_crm.html"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >voir le site</a
-                                >
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- upper button -->
-        <a href="#accueil" class="button-up"
-            ><i class="fa-solid fa-circle-chevron-up"></i
-        ></a>
-
-        <!-- FOOTER -->
-        <footer id="footer" class="text-center py-5">
-            <div id="contact" class="container">
-                <div class="row">
-                    <div class="col-12 py-5 pt-3">
-                        <div>
-                            <p>
-                                Besoin de discuter de votre projet et obtenir un
-                                devis ?
-                            </p>
-                            <p>
-                                <a
-                                    href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
-                                    >Contactez moi par email</a
-                                >
-                                ou directement par téléphone au
-                                <a href="tel:+33771802921">+33 7 71 80 29 21</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text-center py-3 col-md-6 p-0">
-                        <ul class="p-0">
-                            <li>
-                                <i class="fa-solid fa-chevron-right pe-1"></i
-                                ><a href="#header"><i>Accueil</i></a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right pe-1"></i
-                                ><a href="#main"><i>Mes services</i></a>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right pe-1"></i
-                                ><a
-                                    href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
-                                    ><i>Me contacter</i></a
-                                >
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right pe-1"></i>
-                                <a
-                                    href="./src/docs/CV Fernandes_01.pdf"
-                                    target="_blank"
-                                    ><i>Télécharger mon CV</i></a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copyrigth py-3 col-md-5 p-0">
-                        <p>&copy; Nuno Fernandes <span>2022</span></p>
-                        <span><i>nunofernandes-dev.com</i></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="social-media-footer">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100081379027099"
-                                target="_blank"
-                                class="mx-1"
-                                ><i class="fa-brands fa-facebook-f"></i
-                            ></a>
-                            <a
-                                href="https://www.instagram.com/nunofernandes_dev/"
-                                target="_blank"
-                                class="mx-1"
-                                ><i class="fa-brands fa-instagram"></i
-                            ></a>
-                            <a
-                                href="https://www.linkedin.com/in/nuno-fernandes-69a6a4133?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BC3hyZ31bTzOngvoj6LUkFQ%3D%3D"
-                                target="_blank"
-                                class="mx-1"
-                                ><i class="fa-brands fa-linkedin-in"></i
-                            ></a>
-                            <a
-                                href="https://github.com/Nunofds"
-                                target="_blank"
-                                class="mx-1"
-                                ><i class="fa-brands fa-github"></i
-                            ></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Mes projets -->
+      <section id="projects">
+        <h2>Quelques projets que j'ai réalisé</h2>
+        <div class="container projects-container my-5">
+          <!-- BurgerCode -->
+          <div class="card">
+            <h3 class="title">BurgerCode</h3>
+            <p class="mt-5 pt-3 ps-3" style="color: aliceblue">Projet PHP</p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
             </div>
-        </footer>
+            <div class="circle">
+              <img
+                src="./src/img/burgerCode.png"
+                alt="image du site web a visiter"
+                srcset=""
+              />
+              <p class="mt-2">
+                <a
+                  class="btn btn-primary"
+                  href="http://neft.byethost13.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >voir projet</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- SnakeGame -->
+          <div class="card">
+            <h3 class="title">SnakeGame</h3>
+            <p class="mt-5 pt-3 ps-3" style="color: aliceblue">
+              Projet Javascript
+            </p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+              <img
+                src="./src/img/snakegame.PNG"
+                alt="image du site web a visiter"
+                srcset=""
+              />
+              <p class="mt-2">
+                <a
+                  class="btn btn-primary"
+                  href="https://nunofds.github.io/gamesnake/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >voir projet</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- HotelNetflix -->
+          <div class="card">
+            <h3 class="title">HotelNetflix</h3>
+            <p class="mt-5 pt-3 ps-3" style="color: aliceblue">
+              Projet Symfony
+            </p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+              <img
+                src="./src/img/hotelNetflix.PNG"
+                alt="image du site web a visiter"
+                srcset=""
+              />
+              <p class="mt-2">
+                <a
+                  class="btn btn-primary"
+                  href="./src/docs/HotelNetflix.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >voir projet</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- PizzaMama -->
+          <div class="card">
+            <h3 class="title">PizzaMama</h3>
+            <p class="mt-5 pt-3 ps-3" style="color: aliceblue">
+              Projet Python (Django)
+            </p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+              <img
+                src="./src/img/pizzaMama.PNG"
+                alt="image du site web a visiter"
+                srcset=""
+              />
+              <p class="mt-2">
+                <a
+                  class="btn btn-primary"
+                  href="https://nunodev.pythonanywhere.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >voir projet</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- NF_CRM -->
+          <div class="card">
+            <h3 class="title">CRM</h3>
+            <p class="mt-5 pt-3 ps-3" style="color: aliceblue">
+              Projet Python (Django)
+            </p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+              <img
+                src="./src/img/NF_CRM.PNG"
+                alt="image du site web a visiter"
+                srcset=""
+              />
+              <p class="mt-2">
+                <a
+                  class="btn btn-primary"
+                  href="./src/files/nf_crm.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >voir projet</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <!-- ***** Bootstrap5 js cdn ***** -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-            crossorigin="anonymous"
-        ></script>
-        <!-- jquery cdn -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- upper button -->
+    <a href="#accueil" class="button-up"
+      ><i class="fa-solid fa-circle-chevron-up"></i
+    ></a>
 
-        <!-- ***** my script js ***** -->
-        <script src="./src/js/script.js"></script>
-    </body>
+    <!-- FOOTER -->
+    <footer id="footer" class="text-center py-5">
+      <div id="contact" class="container">
+        <div class="row">
+          <div class="col-12 py-5 pt-3">
+            <div>
+              <p>Besoin de discuter de votre projet et obtenir un devis ?</p>
+              <p>Vous cherchez un alternant ?</p>
+              <p>
+                <a
+                  href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
+                  >Contactez moi par email</a
+                >
+                ou directement par téléphone au
+                <a href="tel:+33771802921">+33 7 71 80 29 21</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center py-3 col-md-6 p-0">
+            <ul class="p-0">
+              <li>
+                <i class="fa-solid fa-chevron-right pe-1"></i
+                ><a href="#header"><i>Accueil</i></a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right pe-1"></i
+                ><a href="#main"><i>Mes services</i></a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right pe-1"></i
+                ><a
+                  href="mailto:fernandes.n.sa@outlook.fr?subject=Email%20de%20mon%20site%20web"
+                  ><i>Me contacter</i></a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right pe-1"></i>
+                <a href="./src/docs/CV Fernandes_01.pdf" target="_blank"
+                  ><i>Télécharger mon CV</i></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="copyrigth py-3 col-md-5 p-0">
+            <p>&copy; Nuno Fernandes <span>2022</span></p>
+            <span><i>nunofernandes-dev.com</i></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="social-media-footer">
+              <a
+                href="https://www.linkedin.com/in/nuno-fernandes-69a6a4133?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BC3hyZ31bTzOngvoj6LUkFQ%3D%3D"
+                target="_blank"
+                class="mx-1"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/Nunofds" target="_blank" class="mx-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ***** Bootstrap5 js cdn ***** -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- ***** my script js ***** -->
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
